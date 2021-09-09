@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./style.css"
+    "sass": "sass --watch ./sass/main.scss:./src/style.css"
   },
   "author": "Carbonnier Emeric",
   "license": "ISC",
