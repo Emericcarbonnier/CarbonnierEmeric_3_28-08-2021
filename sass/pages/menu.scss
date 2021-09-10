@@ -1,0 +1,87 @@
+.header{
+    display: block;
+    i{
+        position: absolute;
+        top: 25px;
+        font-size: 1.5em;
+    }
+}
+
+.intro{
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+        .title{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .title__menu{
+                font-family: "shrikhand";
+            }
+            .title__button{
+                border: none;
+                background-color: white;
+                font-size:1.5em;
+            }
+        }
+        .allmenu{
+
+            display: flex;
+            flex-direction: column;
+            .item-list{
+                display: flex;
+                flex-direction: column;
+                .item-list_title{
+                    font-weight: lighter;
+                }
+
+            .item{
+                box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.15);
+                margin-top: 15px;
+                display: flex;
+                padding: 10px;
+                max-width: 100%;
+                border: 0px solid;
+                border-radius: 20px;
+                background-color: white;
+                .item__textleft{
+                  flex: 1;
+                    h4{
+                        margin: 0;
+                    }
+                    p{
+                        margin: 0;
+                        margin-top: 5px;
+                    }
+
+                    
+
+                }
+                .item__price{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    
+                }
+                .item__confirm{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                }
+            }
+
+            }
+        }
+}
+.commander{
+    margin: 50px auto;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 20px 60px;
+    background: linear-gradient(to bottom, $pink 0%, $purple 100%);
+    border: 5px none;
+    border-radius: 40px 40px 40px 40px;
+}
