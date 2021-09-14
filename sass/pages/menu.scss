@@ -74,14 +74,26 @@
                 }
                 .item__price{
                     display: flex;
+                    font-weight: bold;
                     justify-content: flex-end;
                     align-items: flex-end;
+                    margin-right: 20px;
                     
                 }
                 .item__confirm{
                     display: flex;
-                    justify-content: flex-end;
-                    align-items: flex-end;
+                    justify-content: center;
+                    align-items: center;
+                    margin: -10px -10px -10px -10px;
+                    border-radius: 0 20px 20px 0;
+                    width: 60px;
+                    background-color: $green;
+
+                    i{
+                        font-size: 25px;
+                        
+                        color: white;
+                    }
                 }
             }
 
@@ -91,6 +103,7 @@
 .commander{
     margin: 50px auto;
     display: block;
+    font-size: 1em;
     text-decoration: none;
     font-weight: bold;
     color: white;
