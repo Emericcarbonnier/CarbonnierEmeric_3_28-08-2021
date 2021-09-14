@@ -211,10 +211,17 @@ body {
   font-size: 1.5em;
 }
 
+.pages_img {
+  height: 270px;
+}
+
 .intro {
+  position: relative;
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
+  border-radius: 2rem 2rem 0 0;
+  margin-top: -50px;
 }
 .intro .title {
   display: flex;
@@ -238,8 +245,14 @@ body {
   display: flex;
   flex-direction: column;
 }
-.intro .allmenu .item-list .item-list_title {
+.intro .allmenu .item-list .item-list_title h3 {
   font-weight: lighter;
+}
+.intro .allmenu .item-list .item-list_title .trait {
+  height: 5px;
+  width: 40px;
+  margin-top: -10px;
+  background-color: #99E2D0;
 }
 .intro .allmenu .item-list .item {
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15);
