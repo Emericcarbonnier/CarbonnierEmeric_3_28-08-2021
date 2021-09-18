@@ -23,7 +23,7 @@
     }
 
         .reservation__button{
-        margin: 0 100px;
+        margin: 0 auto;
         display: block;
         text-decoration: none;
         font-weight: bold;
@@ -32,6 +32,7 @@
         background: linear-gradient(to bottom, $pink 0%, $purple 100%);
         border: 5px none;
         border-radius: 40px 40px 40px 40px;
+        width: 200px;
 
     }
 }
@@ -45,11 +46,21 @@
             display: flex;
             flex-direction: column;
 
+            @media (min-width: 748px){
+                flex-direction: row;
+                justify-content: space-around;
+            };
+
             .tutorial_bloc{
                 margin-top: 20px;
                 position: relative;
                 display: flex;
                 align-items: center;
+
+                @media (min-width: 748px){
+                    margin: 0 10px;
+
+                }
 
                 .number{
                     position: absolute;
@@ -80,6 +91,10 @@
                         p{
                         padding-left: 50px;
                         font-weight: bold;
+
+                        @media (min-width: 748px){
+                            padding-left: 20px;
+                        }
                     }
 
                 }
@@ -111,6 +126,11 @@ img {
         .allcard__choice{
             display: flex;
             flex-direction: column;
+            @media (min-width: 748px){
+                flex-direction: unset;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
 
             .card{
                 position: relative;
@@ -119,6 +139,10 @@ img {
                 border: 1px;
                 border-radius: 25px;
                 margin: 15px 0;
+
+                @media (min-width: 748px){
+                    width: 48%;
+                }
                         .card__new{
                             position: absolute;
                             top: 1em; right: 0.75em;

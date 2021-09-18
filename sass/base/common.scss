@@ -10,8 +10,11 @@ body {
 
 
 .container {
-    max-width: 425px;
     margin: auto;
+    
+    @media (min-width: 1440px){
+        max-width: 1440px;
+    }
 }
 
 .logo {
@@ -21,41 +24,48 @@ body {
     margin: 0;
 }
 
-.marge_ext{
+.marge_ext {
     margin: 0px 20px;
 }
-.allcard a{
+
+.allcard a {
     text-decoration: none;
     color: black;
 }
 
-.footer{
+.footer {
     background-color: rgb(51, 51, 51);
-    padding:20px 0;
-    .footer_list{
+    padding: 20px 0;
+
+    .footer_list {
         list-style: none;
-        padding:0;
-        a{
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: white;
-        i{
-            font-size: 1em;
+        padding: 0;
+
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+
+            i {
+                font-size: 1em;
+            }
         }
-        }
-        li{
+
+        li {
             margin-top: 10px;
         }
-        p{
+
+        p {
             margin: 0;
             margin-left: 12px;
         }
     }
-    .footer__logo{
-    font-family: "shrikhand";
-    color: white;
-    font-weight: lighter;
-    font-size: 1.3em;
+
+    .footer__logo {
+        font-family: "shrikhand";
+        color: white;
+        font-weight: lighter;
+        font-size: 1.3em;
     }
 }
