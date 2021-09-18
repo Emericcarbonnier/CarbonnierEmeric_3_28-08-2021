@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./src/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/styles.css",
+    "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "author": "Carbonnier Emeric",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "dependencies": {
     "sass": "^1.38.2"
   }
