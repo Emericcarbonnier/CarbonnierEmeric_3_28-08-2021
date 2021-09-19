@@ -1,6 +1,12 @@
-.header{
+.header {
     display: block;
-    i{
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    i {
         position: absolute;
         top: 25px;
         font-size: 1.5em;
@@ -8,77 +14,103 @@
 }
 
 
-.intro{
+.intro {
     position: relative;
     background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
     border-radius: 2rem 2rem 0 0;
     margin-top: -50px;
-        .title{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            .title__menu{
-                font-family: "shrikhand";
-            }
-            .title__button{
-                border: none;
-                background-color: white;
-                font-size:1.5em;
-            }
-        }
-        .allmenu{
 
+    .title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .title__menu {
+            font-family: "shrikhand";
+        }
+
+        .title__button {
+            border: none;
+            background-color: white;
+            font-size: 1.5em;
+        }
+    }
+
+    .allmenu {
+
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 1024px) {
+            flex-direction: unset;
+            justify-content: space-between;
+        }
+
+        .item-list {
             display: flex;
             flex-direction: column;
-            .item-list{
-                display: flex;
-                flex-direction: column;
-                .item-list_title{
-                    h3{
+            @media (min-width: 1024px) {
+                width: 30%;
+            }
+            
+
+            .item-list_title {
+                h3 {
                     font-weight: lighter;
-                    }
-                    .trait{
-                        height: 5px;
-                        width: 40px;
-                        margin-top: -10px;
-                        background-color: $green;
-                    }
+                    margin: 0;
                 }
 
-            .item{
-                box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.15);
+                .trait {
+                    height: 5px;
+                    width: 40px;
+                    background-color: $green;
+                }
+            }
+
+            .item {
+                box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15);
                 margin-top: 15px;
                 display: flex;
                 padding: 10px;
-                max-width: 100%;
                 border: 0px solid;
                 border-radius: 20px;
                 background-color: white;
-                .item__textleft{
-                  flex: 1;
-                    h4{
+
+                @media (min-width: 1024px) {
+                    margin-top: 40px;
+                }
+
+                .item__textleft {
+                    flex: 1;
+                    @extend %dotted;
+
+                    h4 {
                         margin: 0;
+                        @extend %dotted;
                     }
-                    p{
+
+                    p {
                         margin: 0;
                         margin-top: 5px;
+                        @extend %dotted;
                     }
 
-                    
+
 
                 }
-                .item__price{
+
+                .item__price {
                     display: flex;
                     font-weight: bold;
                     justify-content: flex-end;
                     align-items: flex-end;
                     margin-right: 20px;
-                    
+
                 }
-                .item__confirm{
+
+                .item__confirm {
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -87,18 +119,19 @@
                     width: 60px;
                     background-color: $green;
 
-                    i{
+                    i {
                         font-size: 25px;
-                        
+
                         color: white;
                     }
                 }
             }
 
-            }
         }
+    }
 }
-.commander{
+
+.commander {
     margin: 50px auto;
     display: block;
     font-size: 1em;
