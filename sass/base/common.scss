@@ -22,6 +22,9 @@ body {
     text-align: center;
     padding: 15px;
     margin: 0;
+    @media (min-width: 1440px) {
+        font-size: 2em;
+    }
 }
 
 .marge_ext {
