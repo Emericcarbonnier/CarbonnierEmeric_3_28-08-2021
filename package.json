@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/styles.css",
-    "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/"
+    "sass-dev": "sass --watch ./sass/main.scss:./public/css/styles.css",
+    "sass-prod": "sass --style=compressed ./sass/main.scss:./public/css/styles.css",
+    "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/",
+    "prod": "npm run sass-prod && npm run prefix"
   },
   "author": "Carbonnier Emeric",
   "license": "ISC",
