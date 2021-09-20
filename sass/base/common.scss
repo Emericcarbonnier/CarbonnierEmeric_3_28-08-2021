@@ -8,10 +8,8 @@ body {
     font-family: "Roboto";
 }
 
-
 .container {
     margin: auto;
-
     @media (min-width: 1440px) {
         max-width: 1440px;
     }
@@ -42,8 +40,6 @@ body {
 
 .footer {
     padding: 20px 0;
-    max-width: 1440px;
-    margin: auto;
 
     .footer_list {
         list-style: none;
