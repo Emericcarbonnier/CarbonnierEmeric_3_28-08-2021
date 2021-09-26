@@ -1,0 +1,8 @@
+@for $i from 0 through 20 {
+    .appear-#{$i} {
+      animation-delay:  #{$i * 100}ms;
+    
+  }}
+
+ 
+
