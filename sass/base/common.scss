@@ -69,3 +69,31 @@ body {
         font-size: 1.3em;
     }
 }
+
+.card__heart {
+
+    .card__heart::before {
+        content: "";
+    }
+
+    margin-right: 15px;
+    font-size: 1.5em;
+    bottom: 1em;
+    color: black;
+    cursor: pointer;
+    font-size: 25px;
+    position: absolute;
+    right: 0.5em;
+    
+
+
+    &:hover {
+        background: linear-gradient($pink, $purple);
+        font-weight: 600;
+        transform: scale(1.2);
+        transition: all 1.5s ease-out;
+        background-clip:text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+}
