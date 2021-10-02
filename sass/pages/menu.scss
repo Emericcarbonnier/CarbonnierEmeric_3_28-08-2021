@@ -77,10 +77,13 @@
                 border: 0px solid;
                 border-radius: 20px;
                 background-color: white;
+                overflow: hidden;
+                cursor: pointer;
 
                 @media (min-width: 1024px) {
                     margin-top: 40px;
                 }
+
 
                 .item__textleft {
                     flex: 1;
@@ -114,17 +117,43 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin: -10px -10px -10px -10px;
+                    margin: -10px -75px -10px 10px;
                     border-radius: 0 20px 20px 0;
                     width: 60px;
                     background-color: $green;
+                    animation-fill-mode: forwards;
+                   
+
+                    
+
 
                     i {
                         font-size: 25px;
-
+                        transition: all .4s .2s ease-in-out;
                         color: white;
+                        transform: rotate(180deg);
+                        transition-duration: 0.5s;
                     }
                 }
+
+                
+                &:hover .item__confirm{
+                    margin: -10px -10px -10px 10px;
+                    transition-duration: 1s;
+                }
+
+                
+
+                
+
+
+
+                &:hover i{
+                    transition-duration: 0.5s;
+                    transform:rotate(0);
+                }
+
+
             }
 
         }
@@ -138,8 +167,16 @@
     text-decoration: none;
     font-weight: bold;
     color: white;
+    cursor: pointer;
     padding: 20px 60px;
-    background: linear-gradient(to bottom, $pink 0%, $purple 100%);
+    background: $lineargradient;
     border: 5px none;
     border-radius: 40px 40px 40px 40px;
+    box-shadow: 0px 0px 45px -15px #000000;
+
+    &:hover{
+        filter: brightness(1.2);
+        box-shadow: 0px 0px 45px -10px #000000;
+
+    }
 }

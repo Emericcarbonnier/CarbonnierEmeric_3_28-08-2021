@@ -31,10 +31,15 @@
         font-weight: bold;
         color: white;
         padding: 20px;
-        background: linear-gradient(to bottom, $pink 0%, $purple 100%);
+        background: $lineargradient;
         border: 5px none;
         border-radius: 40px 40px 40px 40px;
         width: 200px;
+
+        &:hover{
+            filter: brightness(1.2);
+            box-shadow: 0px 0px 45px -10px #000000;
+        }
 
     }
 }
