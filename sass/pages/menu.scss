@@ -121,11 +121,6 @@
                     border-radius: 0 20px 20px 0;
                     width: 60px;
                     background-color: $green;
-                    animation-fill-mode: forwards;
-                   
-
-                    
-
 
                     i {
                         font-size: 25px;
@@ -136,21 +131,16 @@
                     }
                 }
 
-                
-                &:hover .item__confirm{
+
+                &:hover .item__confirm {
                     margin: -10px -10px -10px 10px;
                     transition-duration: 1s;
                 }
 
-                
 
-                
-
-
-
-                &:hover i{
+                &:hover i {
                     transition-duration: 0.5s;
-                    transform:rotate(0);
+                    transform: rotate(0);
                 }
 
 
@@ -174,7 +164,7 @@
     border-radius: 40px 40px 40px 40px;
     box-shadow: 0px 0px 45px -15px #000000;
 
-    &:hover{
+    &:hover {
         filter: brightness(1.2);
         box-shadow: 0px 0px 45px -10px #000000;
 
