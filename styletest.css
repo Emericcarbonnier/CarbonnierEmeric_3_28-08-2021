@@ -1,18 +1,29 @@
-.fa-heart{
-    bottom: 1em;
-    color: black;
-    cursor: pointer;
-    font-size: 25px;
-    /* position: absolute; */
-    right: 1em;
-    transition: all .2s ease-in-out;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&family=Shrikhand&display=swap');
+
+.tracking-in-contract {
+    font-size: 100px;
+    font-weight: bold;
+    font-family: "shrikhand";
+    color: blue;
+	animation: tracking-in-contract 5s  linear infinite;
 }
 
- .fa-heart:hover {
-        background: linear-gradient(pink, purple);
-        color: white;
-        font-weight: 600;
-        transform: scale(1.2);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+@keyframes tracking-in-contract {
+    0% {
+    color: green;
+      letter-spacing: 1em;
+      opacity: 0.5;
     }
+   
+    50% {
+        color: pink;
+        letter-spacing: normal;
+      opacity: 1;
+    }
+   
+    100% {
+        color: purple;
+        letter-spacing: 1em;
+        opacity: 0.5;
+    }
+  }
