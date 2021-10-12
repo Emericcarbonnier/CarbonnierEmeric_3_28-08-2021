@@ -150,6 +150,11 @@
     }
 }
 
+.item{
+    animation: item-appear .6s;
+    animation-fill-mode: both;
+}
+
 .commander {
     margin: 50px auto;
     display: block;

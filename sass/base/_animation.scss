@@ -1,0 +1,41 @@
+// keyframe apparition plat page menu
+
+@keyframes item-appear {
+    0% {
+      transform: scale(0)
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+ 
+  // keyframe loader
+
+@keyframes loader {
+  100% {
+      opacity: 0;
+      z-index: -10;
+  }
+} 
+
+@keyframes moove {
+  0% {
+  color: $purple;
+    letter-spacing: 1em;
+    opacity: 1;
+  }
+ 
+  50% {
+      color: $pink;
+      letter-spacing: normal;
+    opacity: 1;
+  }
+ 
+  100% {
+      color: $purple;
+      letter-spacing: 1em;
+      opacity: 1;
+  }
+}
